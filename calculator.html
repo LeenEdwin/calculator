@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> calculator</title>
+	<script type="text/javascript">
+		 function calc(results){
+		 	form.displayresults.value=form.displayresults.value+results;
+		 }
+	</script>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		.box{
+			margin-left: 400px;
+			margin-top: 120px;
+			width: 260px;
+			height: 400px;
+			background-color: #4e4a4a;
+			padding: 30px;
+
+		}
+		input{
+			padding: 7px;
+			font-size: 30px;
+			height: 40px;
+			width: 40px;
+			margin: 5px;
+			background-color:lightblue;
+			text-align: center;
+		}
+		input:hover{
+			background-color: lightgreen;
+		}
+		#dis{
+			width: 250px;
+			text-align: end;
+			background-color: black;
+			color: white;
+		}
+		body{
+			background-image: url(mwesh.jpg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>MY CALCULATOR</h2>
+		<div class="cont">
+			<form name="form">
+				<div class="display" >
+					<input type="text" id="dis" name="displayresults" placeholder="0">
+				</div>
+				<div class="btn">
+					<input type="reset" name="reset" value="C" onclick="calc(reset.value">
+					<input type="button" name="delete" value="X" onclick="calc(delete.value">
+					<br>
+					<input type="button" name="A1" value="1" onclick="calc(A1.value)">
+					<input type="button" name="A2" value="2" onclick="calc(A2.value)">
+					<input type="button" name="A3" value="3" onclick="calc(A3.value)">
+					<input type="button" name="plus" value="+" onclick="calc(plus.value)">
+					<br>
+					<input type="button" name="A4" value="4" onclick="calc(A4.value)">
+					<input type="button" name="A5" value="5" onclick="calc(A5.value)">
+					<input type="button" name="A6" value="6" onclick="calc(A6.value)">
+					<input type="button" name="sub" value="-" onclick="calc(sub.value)">
+					<br>
+					<input type="button" name="A7" value="7" onclick="calc(A7.value)">
+					<input type="button" name="A8" value="8" onclick="calc(A8.value)">
+					<input type="button" name="A9" value="9" onclick="calc(A9.value)">
+					<input type="button" name="multiply" value="*" onclick="calc(multiply.value)">
+					<br>
+					<input type="button" name="A0" value="0" onclick="calc(A0.value)">
+					<input type="button" name="Ad" value="." onclick="calc(Ad.value)">
+					<input type="button" name="Eq" value="=" onclick="displayresults.value=eval(displayresults.value)">
+					<input type="button" name="divide" value="/" onclick="calc(divide.value)">
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
